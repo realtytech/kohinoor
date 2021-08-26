@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178894513-1"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+         dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-178894513-1');
+   </script>
+   <!-- Google Tag Manager -->
+   <script>
+      (function (w, d, s, l, i) {
+         w[l] = w[l] || [];
+         w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+         });
+         var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+         j.async = true;
+         j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+         f.parentNode.insertBefore(j,
+            f);
+      })(window, document, 'script', 'dataLayer', 'GTM-WTXXMJF');
+   </script>
+   <!-- End Google Tag Manager -->
+
+   <!-- Required meta tags -->
+   <meta charset="UTF-8" />
+   <link rel="shortcut icon" href="favicon.webp" type="image/x-icon">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>3 BHK Luxury Residences - Kohinoor Altissimo</title>
+
+   <!-- Bootstrap CSS -->
+
+   <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <!-- <link rel="stylesheet" href="css/carousel.css"> -->
+   <link rel="preload" href="./fonts/gotham-black-webfont.ttf" as="font" crossorigin="anonymous" />
+   <link rel="preload" href="./fonts/gotham-book-webfont.ttf" as="font" crossorigin="anonymous" />
+   <link rel="preload" href="./fonts/gotham-bold-webfont.ttf" as="font" crossorigin="anonymous" />
+
+
+   <link rel="stylesheet" media="screen and (min-width: 1200px)" href="widescreen.css">
+   <link rel="stylesheet" media="screen and (max-width: 1199px)" href="smallscreen.css">
+   <!-- Google Tag Manager -->
+
+   <!-- End Google Tag Manager -->
+   <script src="https://use.fontawesome.com/aab7723bd3.js"></script>
+
+
+   <style>
+
+   </style>
+
+
+
+</head>
+
+<body>
+   <!-- Google Tag Manager (noscript) -->
+   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTXXMJF" height="0" width="0"
+         style="display:none;visibility:hidden"></iframe></noscript>
+
+         <div class="font_preload" style="opacity: 0">
+            <span style="font-family:gotham-black-webfont;
+          src: url(./fonts/gotham-black-webfont.ttf);"></span>
+            <span style="font-family:gotham-book;
+          src: url(./fonts/gotham-book-webfont.ttf);"></span>
+            <span style="font-family:gotham-bold;
+          src: url(../fonts/gotham-bold-webfont.ttf);"></span>
+         </div>
+
+   <div class="modal fade" id="sellModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="fixed-close" style="overflow: hidden;">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+
+            </div>
+            <div class="modal-body">
+               <form id="leadForm-popup">
+                  <h2 class="text-center">GET THE DEAL NOW</h2>
+                  <div class="form-group mt-3">
+                     <input type="text" name="name" id="name-popup" placeholder="Your Name*" class="form-control"
+                        required />
+                  </div>
+                  <div class="form-group">
+                     <input type="email" name="email" id="email-popup" placeholder="Your Email*" class="form-control"
+                        required />
+                  </div>
+                  <div class="form-group">
+                     <input type="text" maxlength="10" minlength="10" onkeypress="return numbersonly(event)"
+                        name="mobile" id="mobile-popup" placeholder="Mobile*" class="form-control" required />
+                  </div>
+
+                  <div class="text-center">
+                     <input type="submit" id="submit_button-popup" class="btn" value="Submit">
+                  </div>
+
+                  <div class="text-center">
+                     <input type="button" id="verify_otp_button-popup" class="btn" value="Verify"
+                        style="display: none; cursor: not-allowed;" onclick="verifyOtpAPI()" disabled>
+                  </div>
+               </form>
+            </div>
+
+         </div>
+      </div>
+   </div>
+   <div class="desktop-only">
+      <!-- <span id="fixed-download" class="text">
+         Download Brochure
+      </span> -->
+      <header>
+         <div class="container">
+            <div class="logo-section">
+               <div class="l-logo">
+                  <a>
+                     <!-- <img src="images/Logo.webp" width="340px" alt="logo" title="Runwal OYT Logo"> -->
+                  </a>
+               </div>
+
+               <!-- <div class="r-logo text-right">
+                  <h1> SION
+                  </h1>
+               </div> -->
+            </div>
+         </div>
+      </header>
+      <div>
+         <img id="banner-image" src="./images/banner.webp" alt="" srcset="">
+         <br>
+         <br>
+      </div>
+
+      <main>
+         <script>
+            var myDaemon = '';
+            localStorage.setItem('myTimestamp', Date.now());
+         </script>
+         <div class="container-fluid">
+
+            <div class="row">
+
+               <hr>
+               <hr>
+               <div class="col-md-6  desc-text">
+                  <div class="text-center">
+                     <!-- <hr> -->
+                     <h1>
+                        EXCLUSIVE <span>
+                           PRICING </span>
+
+                     </h1>
+                     <!-- <img src="./images/Rectangle 4 copy.webp" alt="" srcset=""> -->
+
+                  </div>
+                  <h3 class="text-center">
+                     10,000 Sq. Ft. Luxury Clubhouse <br>
+                     Prime Location at the Center of the City <br>
+                     VRV Air Conditioning System for each home <br>
+                     Magnanimous Sunlit Residences with Sea Link Views <br>
+                     <!-- Located at BKC-Wadala Growth Carridor <br> -->
+
+
+
+                  </h3>
+                  <h1 class="text-center">
+
+                     Luxury 3 Bed Apartments,<span>starting at just 7.1Cr.
+                     </span>
+
+                  </h1>
+                  <br>
+                  <br>
+
+
+               </div>
+               <div class="col-md-6">
+                  <div class="form-section">
+                     <form id="leadForm" class="">
+                        <h2 class="text-center ">GET THE DETAILS & BROCHURE NOW</h2>
+                        <div class="form-group mt-3 mx-auto">
+                           <input type="text" name="name" id="name" placeholder="Your Name*" class="form-control"
+                              required />
+                        </div>
+                        <div class="form-group">
+                           <input type="email" name="email" id="email" placeholder="Your Email*" class="form-control"
+                              required />
+                        </div>
+                        <div class="form-group">
+                           <input type="text" maxlength="10" minlength="10" onkeypress="return numbersonly(event)"
+                              name="mobile" id="mobile" placeholder="Mobile*" class="form-control" required />
+                        </div>
+                        <!-- <div class="form-group">
+                           <input type="text" maxlength="6" minlength="6" onkeypress="return numbersonly(event)"
+                              name="otp" id="otp" placeholder="OTP" class="form-control" style="display: none;"
+                              onchange="isValidOTP()" />
+                        </div> -->
+
+                        <div class="text-center">
+                           <!-- <a href="" class="" type="submit">Submit</a> -->
+                           <input type="submit" id="submit_button" class="btn" value="Download Brochure">
+                        </div>
+
+                        <div class="text-center">
+                           <input type="button" id="verify_otp_button" class="btn" value="Verify"
+                              style="display: none; cursor: not-allowed;" onclick="verifyOtpAPI()" disabled>
+                        </div>
+                     </form>
+                     <div class="Thankyou" style="display: none;">
+                        <h2 class="th2">Thank you for your enquiry</h2>
+                        <p>Our representative will get in touch with you shortly</p>
+                        <div class="text-center">
+                           <a href="#" class=" btn" type="button">Know More</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="text-center">
+
+                     <!-- <img src="./images/Rectangle 4 copy.webp" alt="" srcset=""> -->
+
+                  </div>
+                  <!-- <hr> -->
+                  <br>
+
+                 
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 text-center">
+                  <div class="container-carousel pb-1 mb-1">
+                     <h1 class="text-center">
+                        Project <span>
+                           Highlights </span>
+
+                     </h1>
+
+                     <div class="carousel">
+                        <input type="radio" id="carousel-1" name="carousel[]" checked>
+                        <input type="radio" id="carousel-2" name="carousel[]">
+                        <input type="radio" id="carousel-3" name="carousel[]">
+                        <input type="radio" id="carousel-4" name="carousel[]">
+                        <input type="radio" id="carousel-5" name="carousel[]">
+                        <input type="radio" id="carousel-6" name="carousel[]">
+                        <input type="radio" id="carousel-7" name="carousel[]">
+                        <input type="radio" id="carousel-8" name="carousel[]">
+                        <ul class="carousel__items">
+                           <li class="carousel__item">
+                              <img src="./images/resWebP/1-clubhouse-banner-web.webp" alt="">
+                              <!-- <div class="text">Live Sketch Aquarium</div> -->
+                           </li>
+                           <li class="carousel__item">
+                              <img src="./images/resWebP/2-clubhouse-banner-web.webp" alt="">
+                              <!-- <div class="text">Digital Pool Table</div> -->
+                           </li>
+
+                           
+                           <li class="carousel__item">
+                              <img src="./images/resWebP/3-clubhouse-banner-web.webp" alt="">
+                              <!-- <div class="text">Hill View</div> -->
+                           </li>
+                           
+                           <li class="carousel__item">
+                              <img src="./images/resWebP/4-clubhouse-banner-web-1.webp" alt="">
+                              <!-- <div class="text">Lake View - Night</div> -->
+                           </li>
+                           
+                           <li class="carousel__item">
+                           <img src="./images/resWebP/1-housing-banner-web.webp" alt="">
+                              <!-- <div class="text">Digital Ping Pong</div> -->
+
+                           </li>
+                           <li class="carousel__item">
+                              <img src="./images/resWebP/2-housing-banner-web.webp" alt="">
+                              <!-- <div class="text">Lake View</div> -->
+                           </li>
+                           <li class="carousel__item">
+                              <img src="./images/resWebP/3-housing-banner-web.webp" alt="">
+                              <!-- <div class="text">Open Landscapes</div> -->
+                           </li>
+                           <li class="carousel__item">
+                              <img src="./images/resWebP/4-housing-banner-web.webp" alt="">
+                              <!-- <div class="text">Hill View - Night</div> -->
+                           </li>
+                           
+                           
+                        </ul>
+                        <div class="carousel__prev">
+                           <label for="carousel-1"></label>
+                           <label for="carousel-2"></label>
+                           <label for="carousel-3"></label>
+                           <label for="carousel-4"></label>
+                           <label for="carousel-5"></label>
+                           <label for="carousel-6"></label>
+                           <label for="carousel-7"></label>
+                           <label for="carousel-8"></label>
+                        </div>
+                        <div class="carousel__next">
+                           <label for="carousel-1"></label>
+                           <label for="carousel-2"></label>
+                           <label for="carousel-3"></label>
+                           <label for="carousel-4"></label>
+                           <label for="carousel-5"></label>
+                           <label for="carousel-6"></label>
+                           <label for="carousel-7"></label>
+                           <label for="carousel-8"></label>
+                        </div>
+                        <div class="carousel__nav">
+                           <label for="carousel-1"></label>
+                           <label for="carousel-2"></label>
+                           <label for="carousel-3"></label>
+                           <label for="carousel-4"></label>
+                           <label for="carousel-5"></label>
+                           <label for="carousel-6"></label>
+                           <label for="carousel-7"></label>
+                           <label for="carousel-8"></label>
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+
+
+            </div>
+
+
+            <div class="text-center">
+               <!-- <img src="./images/Rectangle 4 copy.webp" alt="" srcset="">
+                -->
+               <hr>
+               <footer>
+                  <div class="container-fluid">
+                     <p>
+                        Disclaimer:
+                        The content is for information purposes only and does not constitute an offer to avail of any
+                        service.
+                        Images for representation purpose only. This is not the official website. This website is
+                        maintained by
+                        authorized marketing partner. We may also share data, information with rera registered sub
+                        brokers/companies/projects for further processing. The project is registered under MahaRERA
+                        Registration No. : P51900004769, P51900012308,  and is available on website - https://maharera.mahaonline.gov.in
+                        under
+                        registered projects. All Rights Reserved.
+                     </p>
+
+                  </div>
+               </footer>
+
+
+            </div>
+
+         </div>
+
+
+      </main>
+   </div>
+
+   <div class="mobile-only">
+      <header>
+         <div class="container" style="padding:15px">
+            <!-- <div class="logo-section">
+               <div class="l-logo">
+                  <a>
+                     <img src="images/Logo.webp" width="170px" alt="logo" title="Runwal OYT Logo">
+                  </a>
+               </div>
+               <div class="r-logo text-right">
+                  <h1> SION
+                  </h1>
+               </div>
+            </div> -->
+         </div>
+      </header>
+      <div>
+         <img id="banner-image" src="./images/banner_header.webp" alt="" srcset="">
+         <img id="banner-image" src="./images/project_header.webp" alt="" srcset="">
+         <img id="banner-image" style="filter: hue-rotate(-20deg);" src="./images/headline_v2.webp" alt="" srcset="">
+         <!-- <div class="exclusive-banner text-center text-white p-4">
+            <h1>
+               EXCLUSIVE <span>
+                  PRICING </span>
+
+            </h1>
+            <h2>Luxury 3 Bed Apartments</h2>
+            
+            <h1 class="text-center">
+
+               Luxury 3 Bed Apartments <br> 
+               <span id="minimize"> At Center of the City - Dadar <br> </span>
+               <hr>
+               <span>Starting at just 6.5Cr.
+               </span>
+
+            </h1>
+
+         </div>
+      </div> -->
+
+      <main>
+         <script>
+            var myDaemon = '';
+            localStorage.setItem('myTimestamp', Date.now());
+         </script>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xl-6 pt-4">
+
+                  <div class="form-section ">
+                     <form id="leadFormMobile" class="">
+                        <h2 class="text-center">GET THE DETAILS & BROCHURE NOW</h2>
+                        <div class="form-group mt-3">
+                           <input type="text" name="name" id="m-name" placeholder="Your Name*" class="form-control"
+                              required />
+                        </div>
+                        <div class="form-group">
+                           <input type="email" name="email" id="m-email" placeholder="Your Email*" class="form-control"
+                              required />
+                        </div>
+                        <div class="form-group">
+                           <input type="text" maxlength="10" minlength="10" onkeypress="return numbersonly(event)"
+                              name="mobile" id="m-mobile" placeholder="Mobile*" class="form-control" required />
+                        </div>
+                        <!-- <div class="form-group">
+                           <input type="text" maxlength="6" minlength="6" onkeypress="return numbersonly(event)"
+                              name="otp" id="otp" placeholder="OTP" class="form-control" style="display: none;"
+                              onchange="isValidOTP()" />
+                        </div> -->
+
+                        <div class="text-center">
+                           <!-- <a href="" class="" type="submit">Submit</a> -->
+                           <input type="submit" id="submit_button" class="btn" value="Download Brochure">
+                        </div>
+
+                        <div class="text-center">
+                           <input type="button" id="verify_otp_button" class="btn" value="Verify"
+                              style="display: none; cursor: not-allowed;" onclick="verifyOtpAPI()" disabled>
+                        </div>
+                     </form>
+                     <div class="Thankyou" style="display: none;">
+                        <h2 class="th2">Thank you for your enquiry</h2>
+                        <p>Our representative will get in touch with you shortly</p>
+                        <div class="text-center">
+                           <a href="#" class=" btn" type="button">Know More</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-6 pt-4 ">
+                  <div class="text-center">
+                     <h1>
+                        Project <span>
+                           Highlights </span>
+
+                     </h1>
+                     <!-- <img src="./images/Rectangle 4 copy.webp" alt="" srcset=""> -->
+
+                  </div>
+                  <span class="text-desc">
+                     <ol>
+                        <li> <b> &#10192; </b>15+ Unique Amenities<br> </li>
+                        <li> <b> &#10192; </b>10,000 Sq. Ft. Luxury Clubhouse <br></li>
+                        <li> <b> &#10192; </b>Prime Location at the Center of the City <br></li>
+                        <li> <b> &#10192; </b>VRV Air Conditioning System for each home <br></li>
+                        <li> <b> &#10192; </b>Magnanimous Sunlit Residences with Sea Link Views </li>
+
+                     </ol>
+                     <!-- Located at BKC-Wadala Growth Carridor <br> -->
+
+
+
+                  </span>
+                 
+               </div>
+               <div class="col-xl-6 pt-4">
+                  <div class="text-center">
+                    
+                     <div class="container-carousel pb-1 mb-1">
+                        <h1 class="text-center">
+                           Project <span>
+                              Glimpses </span>
+
+                        </h1>
+
+                        <div class="carousel">
+                           <input type="radio" id="carousel-1m" name="carousel-m[]" checked>
+                           <input type="radio" id="carousel-2m" name="carousel-m[]">
+                           <input type="radio" id="carousel-3m" name="carousel-m[]">
+                           <input type="radio" id="carousel-4m" name="carousel-m[]">
+                           <input type="radio" id="carousel-5m" name="carousel-m[]">
+                           <input type="radio" id="carousel-6m" name="carousel-m[]">
+                           <input type="radio" id="carousel-7m" name="carousel-m[]">
+                           <input type="radio" id="carousel-8m" name="carousel-m[]">
+                           <ul class="carousel__items">
+                              <li class="carousel__item">
+                                 <img src="./images/resWebP/1-clubhouse-banner-web.webp" alt="">
+                                 <!-- <div class="text">Live Sketch Aquarium</div> -->
+                              </li>
+                              <li class="carousel__item">
+                                 <img src="./images/resWebP/2-clubhouse-banner-web.webp" alt="">
+                                 <!-- <div class="text">Digital Pool Table</div> -->
+                              </li>
+   
+                              
+                              <li class="carousel__item">
+                                 <img src="./images/resWebP/3-clubhouse-banner-web.webp" alt="">
+                                 <!-- <div class="text">Hill View</div> -->
+                              </li>
+                              
+                              <li class="carousel__item">
+                                 <img src="./images/resWebP/4-clubhouse-banner-web-1.webp" alt="">
+                                 <!-- <div class="text">Lake View - Night</div> -->
+                              </li>
+                              
+                              <li class="carousel__item">
+                              <img src="./images/resWebP/1-housing-banner-web.webp" alt="">
+                                 <!-- <div class="text">Digital Ping Pong</div> -->
+   
+                              </li>
+                              <li class="carousel__item">
+                                 <img src="./images/resWebP/2-housing-banner-web.webp" alt="">
+                                 <!-- <div class="text">Lake View</div> -->
+                              </li>
+                              <li class="carousel__item">
+                                 <img src="./images/resWebP/3-housing-banner-web.webp" alt="">
+                                 <!-- <div class="text">Open Landscapes</div> -->
+                              </li>
+                              <li class="carousel__item">
+                                 <img src="./images/resWebP/4-housing-banner-web.webp" alt="">
+                                 <!-- <div class="text">Hill View - Night</div> -->
+                              </li>
+                              
+                              
+                           </ul>
+                           <div class="carousel__prev">
+                              <label for="carousel-1m"></label>
+                              <label for="carousel-2m"></label>
+                              <label for="carousel-3m"></label>
+                              <label for="carousel-4m"></label>
+                              <label for="carousel-5m"></label>
+                              <label for="carousel-6m"></label>
+                              <label for="carousel-7m"></label>
+                              <label for="carousel-8m"></label>
+                           </div>
+                           <div class="carousel__next">
+                              <label for="carousel-1m"></label>
+                              <label for="carousel-2m"></label>
+                              <label for="carousel-3m"></label>
+                              <label for="carousel-4m"></label>
+                              <label for="carousel-5m"></label>
+                              <label for="carousel-6m"></label>
+                              <label for="carousel-7m"></label>
+                              <label for="carousel-8m"></label>
+                           </div>
+                           <div class="carousel__nav">
+                              <label for="carousel-1m"></label>
+                              <label for="carousel-2m"></label>
+                              <label for="carousel-3m"></label>
+                              <label for="carousel-4m"></label>
+                              <label for="carousel-5m"></label>
+                              <label for="carousel-6m"></label>
+                              <label for="carousel-7m"></label>
+                              <label for="carousel-8m"></label>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+                  <!-- <hr> -->
+
+
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+
+               </div>
+
+
+            </div>
+
+            <!-- <img src="./images/Rectangle 4 copy.webp" alt="" srcset=""> -->
+            <hr>
+            <footer>
+               <div class="container-fluid text-center p-0 pr-4">
+                  <p>
+                     Disclaimer:
+                     The content is for information purposes only and does not constitute an offer to avail of any
+                     service.
+                     Images for representation purpose only. This is not the official website. This website is
+                     maintained by
+                     authorized marketing partner. We may also share data, information with rera registered sub
+                     brokers/companies/projects for further processing. The project is registered under MahaRERA
+                     Registration No. : P51900004769, P51900012308,  and is available on website - https://maharera.mahaonline.gov.in
+                     under
+                     registered projects. All Rights Reserved.
+                  </p>
+
+               </div>
+            </footer>
+
+
+
+
+         </div>
+
+
+      </main>
+   </div>
+
+
+   
+   <script src="js/main.js"></script>
+
+</body>
+
+
+</html>
