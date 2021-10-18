@@ -161,4 +161,5 @@ header img{
     text-transform: uppercase;
     font-weight: normal;
     font-family:gotham-book;
+    cursor: pointer;
   }
