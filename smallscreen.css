@@ -178,7 +178,8 @@ h2{
 
 }
 
-#banner-image{object-fit: contain;}
+#banner-image{object-fit: contain;
+z-index: 50;}
 
 .exclusive-banner{
   background: url(./images/residentialBG-1.jpg);
@@ -195,3 +196,39 @@ h2{
   font-size: 18pt;
 }
 
+
+.sticky{
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 40px;
+  background: #f0af3f;
+  z-index: 25;
+  padding: 0;
+  overflow: hidden;
+}
+
+.sticky span{
+  display: inline-block;
+  width: 40vw;
+  height: 40px;
+  box-sizing: border-box;
+  background: #f0af3f;
+  padding: 0.25rem 0;
+  
+    text-align: center;
+    color: 	#000;
+    
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family:gotham-book;
+   
+    font-size: 10pt;
+    line-height: 2;
+    cursor: pointer;
+  
+}
+
+.sticky span a{
+  color: #000;
+}

@@ -144,3 +144,21 @@ header img{
     width: 100%;
     z-index: 3;
   }
+
+  .sticky{
+    position: fixed;
+    bottom: 11vh;
+    right: 0vw;
+    background-color: #f0af3f;
+    font-size: 20pt;
+    z-index: 75;
+    padding: 1rem;
+    color: black;
+    text-align: center;
+    color: 	#000;
+    border-radius: 15px 0 0 15px;
+    
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family:gotham-book;
+  }

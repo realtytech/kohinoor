@@ -42,18 +42,7 @@ header .container{
 	padding:1rem 15vw;
 }
 
-main .btn{
-	background: #f0af3f;
-	padding: .3rem 1rem;
-	text-align: center;
-	color: 	#000;
-	
-	text-transform: uppercase;
-	font-weight: normal;
-	margin: .8rem 0;
-  font-family:gotham-book;
-  font-size: 20pt;
-}
+
 main .responsive .gallery{
 	margin: .3rem;
 	width: 20vw;
