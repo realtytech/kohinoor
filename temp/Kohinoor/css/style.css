@@ -990,7 +990,7 @@ label.error {
 .modal-header .close,
 #main-pop .close,
 #price-model .close {
-    color: #fff !important;
+    color: #aaa !important;
     opacity: 1 !important;
     margin-top: -25px;
 }
@@ -1536,17 +1536,18 @@ label.error {
 
 button.btn.btn-danger.interested {
     position: fixed;
-    bottom: 15px;
-    right: 15px;
+    bottom: 125px;
+    right: -61px;
     transition: 0.4s ease-in;
     z-index: 999;
-    background-color: #fff;
-    color: #888;
+    background-color: #ddb231;
+    color: #fff;
     width: 160px;
     font-weight: 600;
     font-size: 20px;
     padding: 5px;
-    border: 2px solid #888f;
+    border: 2px solid #fff;
+    transform: rotate(-90deg);
 }
 
 .interested-div {
@@ -3326,8 +3327,8 @@ margin: 0 auto;
 
 .latest-post1,
 .latest-post-inner1 {
-    min-height: 291px;
-    max-height: 240px;
+    min-height: 491px;
+    /* max-height: 240px; */
     margin-bottom: 30px;
 }
 
@@ -4134,3 +4135,13 @@ background-color: #fffc;
       
   }
   
+  .amenityImg{
+    background-color: #666;
+    width: 100%;
+  }
+
+  #map{
+    background-image: url('../images/con-img.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
