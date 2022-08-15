@@ -3899,7 +3899,7 @@ form #msg {
     padding-top: 0.25rem;
     width: 200px;
     height: 100%;
-    filter: contrast(0.2);
+    /* filter: contrast(0.2); */
     
 }
 .cust-width{
@@ -4136,7 +4136,7 @@ background-color: #fffc;
   }
   
   .amenityImg{
-    background-color: #666;
+    background-color: #c7974f;
     width: 100%;
   }
 
