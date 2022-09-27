@@ -132,8 +132,8 @@ function save_landing_pageinfo(elm) {
     var srd = queryParameter('SRD', currentUrl);
 
 
-    if (!srd) srd = '7015g0000004xLTWT';
-    var project = 'Lodha The World Towers';
+    if (!srd) srd = '7015g0000004xKA';
+    var project = 'Kohinoor Altissimp';
     var utm_source = queryParameter('cstm_ppc_campaign',currentUrl);
     var utm_medium = queryParameter('cstm_ppc_channel',currentUrl);
     var data = {
@@ -182,7 +182,7 @@ function storeLeadInSFDC(data,formName) {
       $.ajax(settings).done(function (response) {
         console.log(response);
         storeLeadInDB(data["name"], data["email"], data["mobile"], JSON.stringify(response),formName);
-        setTimeout(function redirect_response() { window.location.href = "response.html"; }, 4000)
+        setTimeout(function redirect_response() { window.location.href = "response.html"; }, 2000)
       }); 
 
 }
