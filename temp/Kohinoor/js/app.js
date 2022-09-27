@@ -128,7 +128,7 @@ function save_landing_pageinfo(elm) {
         
 
     }
-    
+    var srd;
     if (!srd) srd = '7015g0000004xKA';
     var project = 'Kohinoor Altissimo';
     var utm_source = queryParameter('cstm_ppc_campaign',currentUrl);
@@ -147,15 +147,15 @@ function save_landing_pageinfo(elm) {
 
     var data = {
         "name": name,
-        "mobile": mobile,
-        "email": email,
+        "mobile": mobileno,
+        "email": emailid,
         "source": source,
         "comment":"URL:"+currentUrl.substring(0,255)+" UTM Source:"+utm_source+" UTM Medium:"+utm_medium,
         "sub_source":utm_medium,
         "project": project
 
     }
-    storeLeadInEnrichr(data,formName);
+    storeLeadInEnrichr(data,fsource);
     return;
 
 

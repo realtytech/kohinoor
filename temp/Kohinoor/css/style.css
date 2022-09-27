@@ -4111,6 +4111,7 @@ background-color: #fffc;
   @media screen and (max-width: 1199px){
     .mobile-only{
         display: block;
+        max-height: 65vh;
     }
     
     .desktop-only{
@@ -4120,7 +4121,7 @@ background-color: #fffc;
     #banner-image{object-fit: cover;
         /* width: 100vw !important; */
         object-position: center;
-        max-height: 90vh;
+        max-height: 65vh;
       z-index: 50;}
 
       .overlay{
