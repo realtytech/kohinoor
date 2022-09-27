@@ -2079,7 +2079,7 @@ margin-bottom: 23px;
 }
 
 #configuration {
-    background: url("../images/conf.png") center;
+    background: url("../images/conf.webp") center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -3512,7 +3512,7 @@ margin: 0 auto; */
 #crown {
     background-size: cover;
     padding: 4px 0px;
-    /* background: url(../images/patern.png) #272727; */
+    /* background: url(../images/patern.webp) #272727; */
     /* background-repeat: no-repeat; */
     /* background: linear-gradient(-45deg, #f89834, #e91e63, #f25536, #7c7c7c); */
     /* background-size: 400% 400%; */
@@ -3540,7 +3540,7 @@ margin: 0 auto; */
     /* border-radius: 10px; */
     width: 139px;
     margin: 3px auto 25px;
-    background-image: url(../images/div.png);
+    background-image: url(../images/div.webp);
     background-size: cover;
 }
 
@@ -4141,7 +4141,7 @@ background-color: #fffc;
   }
 
   #map{
-    background-image: url('../images/con-img.jpg');
+    background-image: url('../images/con-img.webp');
     background-repeat: no-repeat;
     background-size: contain;
   }

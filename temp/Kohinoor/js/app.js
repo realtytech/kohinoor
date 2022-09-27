@@ -129,13 +129,37 @@ function save_landing_pageinfo(elm) {
 
     }
     
-    var srd = queryParameter('SRD', currentUrl);
-
-
     if (!srd) srd = '7015g0000004xKA';
-    var project = 'Kohinoor Altissimp';
+    var project = 'Kohinoor Altissimo';
     var utm_source = queryParameter('cstm_ppc_campaign',currentUrl);
     var utm_medium = queryParameter('cstm_ppc_channel',currentUrl);
+
+    // var project = 'Hubtown Harmony';
+    // var utm_source = queryParameter('utm_source',currentUrl);
+    // var utm_medium = queryParameter('utm_medium',currentUrl);
+    var sourceMapping = { 'Google_Brand%20Search' : "Google Search",
+        'google_display': "Google Display",
+        "Google%20Discovery": "Google Discovery",
+        "":"Website"
+    }
+
+    var source  = (utm_medium) ? sourceMapping[utm_medium] : "Website";
+
+    var data = {
+        "name": name,
+        "mobile": mobile,
+        "email": email,
+        "source": source,
+        "comment":"URL:"+currentUrl.substring(0,255)+" UTM Source:"+utm_source+" UTM Medium:"+utm_medium,
+        "sub_source":utm_medium,
+        "project": project
+
+    }
+    storeLeadInEnrichr(data,formName);
+    return;
+
+
+    
     var data = {
         "name": name,
         "mobile": mobileno,
@@ -149,7 +173,7 @@ function save_landing_pageinfo(elm) {
     }
     console.log("Adding Data to SFDC");
 
-    storeLeadInSFDC(data,fsource);
+    storeLeadInEnrichr(data,fsource);
     return;
 
 
@@ -206,7 +230,7 @@ function storeLeadInDB(name, email, mobile, response, formName) {
     console.log('Saving Data in DB')
 
 
-    var project = 'Lodha The World Towers';
+    var project = 'Kohinoor Altissimo';
     var timestamp = Date();
     data = {
         "formId": String(Math.floor(Date.now() / 1000)),
@@ -254,5 +278,28 @@ function storeLeadInDB(name, email, mobile, response, formName) {
             console.error(JSON.parse(response));
         }
     };
+
+}
+
+function storeLeadInEnrichr(data,formName) {
+    console.log("Adding Data to Enrichr");
+    console.log(data)
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://pinkode.glitz.apps.enrichr.co/public/companies/41b21e3e-600b-4d9f-aab1-bfb72c5b915e/leads-all",
+        "method": "POST",
+        "headers": {
+          "content-type": "application/json",          
+        },
+        "processData": false,
+        "data": JSON.stringify(data)
+      }
+      
+      $.ajax(settings).done(function (response) {
+        console.log(response);
+        storeLeadInDB(data["name"], data["email"], data["mobile"], JSON.stringify(response),formName);
+        setTimeout(function redirect_response() { window.location.href = "response.html"; }, 2000)
+      }); 
 
 }
