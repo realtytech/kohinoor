@@ -96,6 +96,8 @@
   max-width: 90vw;
   vertical-align: middle;
 }
+
+
 .carousel__prev > label, .carousel__next > label {
   border: 1px solid #fff;
   border-radius: 50%;
