@@ -648,7 +648,7 @@ section p,
 section ul,
 section ol {
     font-size: 14px;
-    line-height: 28px;
+    /* line-height: 28px; */
     letter-spacing: 1px;
 }
 
@@ -2134,15 +2134,32 @@ margin-bottom: 23px;
 }
 
 .fixed-footer-cust {
-    background: #333;
+    background: #c7974f;
     text-align: center;
     padding: 10px 0px 10px 0px;
     width: 100%;
     position: fixed;
     bottom: 0px;
     z-index: 99;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
 }
-
+.padding-y {
+    padding: 0px 20px;
+}
+.offer,.dbroucher {
+	color: #b51e1e !important;
+	font-weight: bold;
+	padding: 5px;
+    font-size: large;
+	background-color: #fed501;
+	/* border: 5px solid #00a9b1; */
+    margin-bottom: 25px;
+    display: block;
+    text-transform: uppercase !important;
+}
+.dbroucher{
+    cursor: pointer;
+}
 .f-icon {}
 
 .fix-link {
@@ -3465,7 +3482,7 @@ margin: 0 auto; */
     color: #333 !important;
     border-color: #edf3fa;
     border-radius: 5px;
-    padding: 5px 19px 5px 18px;
+    padding: 0.25rem;
     transition: all 0.5s ease;
     font-weight: 800;
 }
@@ -4068,11 +4085,11 @@ form #msg {
   .overlay{
     padding: 3rem;
 position: relative;
-top: -120px;
+top: -110px;
 right: -15px;
 left: -15px;
 width: 105%;
-background-color: #fffc;
+background-color: #fffd;
   }
 
   .overlay *{
@@ -4081,11 +4098,12 @@ background-color: #fffc;
     font-size: large;
     font-weight: lighter;
     text-align: center;
+    padding: 0 0.1rem;
   }
 
   .overlay strong{
     color: black;
-    font-weight: 900;
+    font-weight: 1000;
   }
 
   @media screen and (min-width: 1200px){
@@ -4125,10 +4143,10 @@ background-color: #fffc;
       z-index: 50;}
 
       .overlay{
-        padding: 0.25rem;
+        padding: 0.15rem;
       }
       .overlay *{
-        font-size: 9pt;
+        font-size: 13pt;
         
 
       }

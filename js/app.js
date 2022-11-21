@@ -65,10 +65,36 @@ $(document).ready(function() {
 $("form").submit(function (e) {
     e.preventDefault();
     save_landing_pageinfo(e)
-    console.log("SUbmitting form",e)
+    console.log("Submitting form",e)
 
 
 });
+
+// Allow numbers only in mobile field
+function numbersonly(e) {
+    var unicode = e.charCode ? e.charCode : e.keyCode
+    if (unicode != 8) { //if the key isn't the backspace key (which we should allow)
+        if (unicode < 48 || unicode > 57) //if not a number
+            return false //disable key press
+    }
+    // isValidOTP();
+}
+
+function ValidateEmail(mail) {
+    var atpos = mail.indexOf("@");
+    var dotpos = mail.lastIndexOf(".");
+    if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= mail.length) {
+        return false;
+    }
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail)) {
+        return (true)
+    }
+    // alert("You have entered an invalid email address!")
+    return (false)
+}
+
+
+
 
 function save_landing_pageinfo(elm) {
     
@@ -118,15 +144,38 @@ function save_landing_pageinfo(elm) {
     }
 
     if (name != "" && mobileno != "") {
-        $("#pageloader").fadeIn();
-
-        if (elm == 'brochure-form') {
-            document.getElementById('broucher1').click();
-        }
-
-
         
 
+        if (elm == 'brochure-form') {
+            // document.getElementById('broucher1').click();
+        }      
+
+    }
+    if (name == "") {
+        alert('Please enter your name');
+        return;
+    }
+
+
+    if (emailid == "") {
+        alert('Please enter your email id');
+        return;
+    } else {
+        if (!ValidateEmail(emailid)) {
+            alert('Please enter a valid email id');
+            return;
+        }
+
+    }
+    if (mobileno == "") {
+        alert('Please enter your valid mobile number');
+        return;
+    } else {
+        const regex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        if (!regex.test(mobileno)) {
+            alert('Please enter your valid 10 digit mobile number');
+            return;
+        }
     }
     var srd;
     if (!srd) srd = '7015g0000004xKA';
@@ -153,6 +202,7 @@ function save_landing_pageinfo(elm) {
         "project": project
 
     }
+    $("#pageloader").fadeIn();
     storeLeadInEnrichr(data,fsource);
     return;
 
@@ -290,12 +340,13 @@ function storeLeadInEnrichr(data,formName) {
         "headers": {
           "content-type": "application/json",          
         },
-        "processData": false,
+        "processData": true,
         "data": JSON.stringify(data)
       }
       
-      $.ajax(settings).done(function (response) {
+      $.ajax(settings).always(function (response) {
         console.log(response);
+        Set_Cookie('formFilled', 'it works', '', 'index.html', '', '');
         storeLeadInDB(data["name"], data["email"], data["mobile"], JSON.stringify(response),formName);
         setTimeout(function redirect_response() { window.location.href = "response.html"; }, 2000)
       }); 
