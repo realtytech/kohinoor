@@ -4191,10 +4191,10 @@ Image credits: unsplash.com
 }
 .fade-carousel-m {
     position: relative;
-    height: 60vh;
+    height: 65vh;
 }
 .fade-carousel-m .carousel-inner .item {
-    height: 60vh;
+    height: 65vh;
 }
 .fade-carousel .carousel-indicators > li {
     margin: 0 2px;
