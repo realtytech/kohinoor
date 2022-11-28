@@ -186,6 +186,8 @@ function save_landing_pageinfo(elm) {
     var utm_medium = queryParameter('utm_medium',currentUrl);
     var sourceMapping = { 'Google_Brand%20Search' : "Google Search",
         'google_display': "Google Display",
+        'google_search': "Google Search",
+        'Discovery': "Google Discovery",
         "Google%20Discovery": "Google Discovery",
         "":"Website"
     }
