@@ -110,7 +110,7 @@ function save_landing_pageinfo(elm) {
     // var conf = jQuery('#' + elm + ' select[name="conf"]').val();
     var message = jQuery('#' + elm + ' textarea[name="message"]').val();
     var fsource = jQuery('#' + elm + ' input[name="source"]').val();
-    var currentUrl = location.hostname;
+    var currentUrl = window.location.href;
     // var cstm_ppc_channel = Get_Cookie('cstm_ppc_channel');
 
 
