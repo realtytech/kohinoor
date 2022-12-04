@@ -192,7 +192,7 @@ function save_landing_pageinfo(elm) {
         "":"Website"
     }
 
-    var source  = (utm_medium) ? sourceMapping[utm_medium] : "Website";
+    var source  = (utm_source) ? sourceMapping[utm_source] : "Website";
 
     var data = {
         "name": name,
